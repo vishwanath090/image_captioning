@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 mobilenet_model = MobileNetV2(weights="imagenet")
 mobilenet_model = Model(inputs=mobilenet_model.inputs, outputs=mobilenet_model.layers[-2].output)
 
-# Load your trained model
+# Load your trained  model
 model = tf.keras.models.load_model('mymodel.h5')
 
 # Load the tokenizer
